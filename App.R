@@ -1,6 +1,5 @@
 library(shiny)
 library(shinydashboard)
-library("readxl")
 library(ggplot2)
 library(DT)
 library(Rsamtools)
@@ -353,8 +352,8 @@ server <- function(session, input, output){
   })
   
   output$Gtable <-renderDataTable(
-     DupDel(),options = list(pageLength = 6)
-#     DupDelFilt(), options = list(pageLength = 7)
+#     DupDel(),options = list(pageLength = 6)
+     DupDelFilt(), options = list(pageLength = 7)
   )
 
   Cut <- reactive({
