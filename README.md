@@ -1,5 +1,5 @@
 # CASPIAN
-A shiny app to visualize and analyse genome coverage data
+A shiny app to visualize and analyse genome coverage data from long read sequencing
 
 R 4.1.0 and Rsamtools are required
 
